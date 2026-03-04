@@ -49,9 +49,13 @@ public class BankAccount {
             deposit = sc.nextInt();
             ac.Deposit(deposit);
         }
-        else{
+        else if(choice==3){
             System.out.println("Exiting...");
         }
+        else{
+            System.out.println("Invalid Choice");
+        }
     }while(choice!=3);
+    sc.close();
     }
 }
